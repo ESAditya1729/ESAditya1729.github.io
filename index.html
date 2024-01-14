@@ -1,121 +1,195 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The Adoenixes Site</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.2/css/fontawesome.min.css" integrity="sha384-BY+fdrpOd3gfeRvTSMT+VUZmA728cfF9Z2G42xpaRkUGu2i3DyzpTURDo5A6CaLK" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flower Shop Landing Page</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- Début navbar-->
-    <br>
-    <br>
-  <div class="wrapper">
-    <nav>
-        <!-- Barre de recherche en forme de checkbox -->
-      <input type="checkbox" id="show-search">
-      <input type="checkbox" id="show-menu">
+<header id="header">
+  <!--  Brand Logo  -->
+  <a class="nav-brand" href="" target="_blank">
+    <img id="header-im" src="Images/Cool Text - Agora 450363572331946.png" alt="Pixel Skincare" style="max-width:50%">
+  </a>
 
-      <label for="show-menu" class="menu-icon"><i class="fas fa-bars"></i></label>
+  <!--  Toggle Menu for Mobile  -->
 
-      <!-- Logo & Buttons -->
-      <div class="content">
-    
-      <div class="logo">
-    <img src="Images/WebsiteLogo.png" style="max-width: 18%; border-radius: 50%;"><a href="#">XLearning</a>
-    </div>
-        <ul class="links">
-          <li>
-            <a href="#" class="desktop-link bartext">Courses</a>
-            <input type="checkbox" id="show-features">
-            <label for="show-features bartext">Courses</label>
-            <ul>
-              <li><a href="#">Domaine X</a></li>
-              <li><a href="#">Domaine Y</a></li>
-              <li><a href="#">Domaine Z</a></li>
-              <li><a href="#">Domaine W </a></li>
-            </ul>
-          </li>
-          <li>
-            <a href="#" class="desktop-link bartext">Services</a>
-            <input type="checkbox" id="show-services">
-            <label for="show-services">Services</label>
-            <ul>
-              <li><a href="#">Certifications</a></li>
-              <li><a href="#">Participation aux séminaires </a></li>           
-            </ul>
-          </li>
-          <li><a href="#" class="bartext">Feedback</a></li>
-          <li><a href="#" class="bartext">Contact Us</a></li>
-        </ul>
-      </div>
-      <label for="show-search" class="search-icon"><i class="fas fa-search"></i></label>
-      <form action="#" class="search-box">
-        <input type="text" placeholder="Search here..." required>
-        <button type="submit" class="go-icon"><i class="fas fa-long-arrow-alt-right"></i></button>
-      </form>
-    </nav>
+  <input type="checkbox" id="toggle-menu" role="button">
+  <label for="toggle-menu" class="toggle-menu">Menu</label>
+
+  <!--  Menus  -->
+  <nav id="nav-bar" class="navbar">
+    <ul class="menu">
+      <li><a class="nav-link" href="#featured">Azure Integration</a></li>
+      <li><a class="nav-link" href="#collections">service</a></li>
+      <li><a class="nav-link" href="#about">popular</a></li>
+      <li><a class="nav-link" href="#contact">contact us</a></li>
+    </ul>
+    <ul class="social-menu">
+      <li><a href="#"><i class="fa fa-pinterest" aria-hidden="true"></i></a></li>
+      <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+      <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+      <li><a href="#"><i class="fa fa-youtube-play" aria-hidden="true"></i></a></li>
+    </ul>
+  </nav>
+</header>
+
+<!-- Hero Section -->
+<div class="her">
+   <div class="hero-text">
+    <!--<img src="Images/Stanley Black & Decker Logo.webp" style="max-width:10%">-->
+    <h1>Middleware - Agora</h1>
+     <h4>"Integration at scale"</h4>
+  <p>Welcome to SBD's Standard Middleware Platoform</p>
+  <p>Partnering For Success :)</p>
+  <img src="Images/HCLLogo.png" style="max-width:20%">
   </div>
-  <br>
-  <br>
-  <br>
-  <div>
-    <div>
-      <img src="https://t3.ftcdn.net/jpg/00/87/97/06/360_F_87970620_Tdgw6WYdWnrZHn2uQwJpVDH4vr4PINSc.jpg" style="max-width:30%;">
-    </div>
-  <div style="margin: auto; width: 20%; padding: 10px;" id="earth"></div>
-  <!--<header id="showcase">
-    <h1 class="hover-underline-animation">Welcome To XLearning</h1><br><br>
-  </header>-->
-  <div class="thirdcontainer">
-    <h2 class="title">
-    <!--<span class="title-word title-word-1">Welcome</span>-->
-   <!-- <img src="https://t3.ftcdn.net/jpg/00/87/97/06/360_F_87970620_Tdgw6WYdWnrZHn2uQwJpVDH4vr4PINSc.jpg" style="max-width:35%;">-->
-    <span class="title-word title-word-2">to</span>
-    <span class="title-word title-word-3">Agora</span>
-    <span class="title-word title-word-4">!</span>
-    </h2>
   </div>
-
-  <div class="dicontainer">
-    <div class="parent card2">
-        <div class="card ">
-            <div class="content-box">
-                <h1 class="card-title">Card Title</h1>
-                <p class="card-content">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere sequi illo nam repudiandae tempore quaerat veritatis doloremque omnis molestias id.
-                </p>
-                <span class="see-more"><button type="button" class="btn btn-info">See More</button></span>
-            </div>
-            <div class="date-box">
-                <span class="month">JUNE</span>
-                <span class="date">29</span>
-            </div>
-        </div>
-    </div>
-
-    <div class="parent card3">
-        <div class="card">
-            <div class="content-box">
-                <h1 class="card-title">Card Title</h1>
-                <p class="card-content">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere sequi illo nam repudiandae tempore quaerat veritatis doloremque omnis molestias id.
-                </p>
-                <span class="see-more"><button type="button" class="btn btn-info">See More</button></span>
-            </div>
-            <div class="date-box">
-                <span class="month">JUNE</span>
-                <span class="date">29</span>
-            </div>
-        </div>
-    </div>
-
-    <div class="parent card4">
-        
 </div>
+
+<!-- Featured Section -->
+<section id="featured">
+  <div class="title title-left">
+    <span class="line"></span><h3>Azure Integration</h3>
+  </div>
+  <div class="wrapper">
+    <div class="image">
+        <img src="https://swimburger.net/media/ppnn3pcl/azure.png" style="max-width:70%; border-radius:50%; filter: drop-shadow(20px 20px 10px green);" alt="Microsoft azure">
+       <img src="">
+    </div>
+    <div class="text">
+      <h2>Agora - An Overview</h2>
+      <p>Agora is the digital platform for enterprise integration and citizen self-service integration.It is a new integration platform which is built in Microsoft Technology(Microsoft Azure)
+        <p style="font-style:italic;">The 3 main types of integration it covers are: </p>
+        <ul>
+          <li>Application Integration – EAI</li>
+          <li>Business Integration – B2B/EDI</li>
+          <li>Machine Integration – M2M/IoT</li>
+        </ul>
+        <p style="font-style:italic;">Agora supports different integration patterns such as :</p>
+        <ul>
+          <li>On premise <-> on Premise</li>
+          <li>Cloud <-> Cloud</li>
+          <li>Cloud <-> on Premise</li>
+        </ul>
+      </p>
+      <img src="https://assets.stickpng.com/images/62067060d7b91b0004122615.png" style="max-width:40%;"><br>
+      <a href="#" class=btn>Let's Train in Azure!</a>
+    </div>
+  </div>
+</section>
+
+<div class="hero">
+  <div class="hero-img">
+    <img src="https://img.onl/IPDUdT" alt="Pixel Skincare">
+  </div>
+
+  <div class="hero-text">
+    <h1>Mom's bouquet</h1>
+    <p>Available in pink,red and yellow.</p>
+     <p>Send your thanks on Mother's Day with a bouquet of flowers.</p>
+    <a href="#featured" class="btn">$600/bouqet</a>
+  </div>
+</div>
+
+<!-- service Section -->
+<section id="collections">
+  <div class="title title-right">
+    <span class="line line-right"></span><h3>Our Service</h3>
+  </div>
+  <div class="wrapper">
+    <a class="box box1" href="#">
+      <h4>wedding </h4>
+      <p>bouquet,decoration</p>
+      <div class="box-overlay"></div>
+    </a>
+    <a class="box box2" href="#">
+      <h4>Customized</h4>
+      <p>dry flower customized</p>
+      <div class="box-overlay"></div>
+    </a>
+    <a class="box box3" href="#">
+      <h4>space decoration</h4>
+      <p>brand party,birthday party decoration</p>
+      <div class="box-overlay"></div>
+    </a>
+  </div>
+</section>
+
+<!-- popular Section -->
+<section id="abou">
+  <div class="row">
+   <img src="https://img.onl/BgCm88" alt="" class="img1">
+    <h4>Concert Floral Arrangement</h4>
+    <p>The long flower arrangement in front of the stage is composed of soft warm colors, plus balloons and imported dry reeds, to achieve a low-key, luxurious and soft harmony.</p>
+
+ </div>
+  <div class="row row2">
+   <img src="https://img.onl/TcKCq4" alt="" class="img1 img2">
+    <h4>Brand Opening Ceremony</h4>
+ <p>Balloons and flowers create a cheerful atmosphere for brand opening. The flowers that match the brand's color scheme will make the color of the space more consistent. The party with desserts, balloons, and flowers is the most lively.</p>
+  </div>
+
+</section>
+<section id="abou">
+  <div class="row">
+   <img src="https://img.onl/H0gPe8" alt="" class="img1">
+<h4>Wedding Ceremony</h4>
+    The colorful flower arches offer the most sincere blessings to the newlyweds. The wedding ceremony in the morning and the floral arrangement for the noon banquet are all arranged by us. Please feel free to tell us your needs.
+ </div>
+  <div class="row row2">
+   <img src="https://img.onl/7RIkqi" alt="" class="img1 img2">
+<h4>Dried flower gift</h4>
+    Dried flower gifts come in many forms. As long as you want, we can customize gifts for you. In addition, there are card writing and flower gift delivery services. Hope to provide you with the best gift giving experience.
+  </div>
+</section>
+
+<!-- weekly flower Section -->
+<section id="about">
+  <div class="title title-left">
+    <span class="line"></span><h3>weekly flower program</h3>
+  </div>
+  <div class="wrapper">
+    <div class="text">
+      <p>Since 2021, Fungblue flower has been at the forefront of the move towards organic and natural life experience.</p>
+      <p>We hope that flowers not only stay in the flower fields in the suburbs and flower shops in the alleys, but can be delivered to your home more easily.</p>
+      <p>$2300/month.Order the weekly program to make life even more beautiful.</p>
+    </div>
+  </div>
+   <div class="video-wrapper">
+     <img src="https://img.onl/NV9rHN" alt="" class="img3">
+    </div>
+</section>
+
+<!-- Contact Section -->
+<section id="contact">
+  <div class="wrapper">
+    <div class="form-wrapper">
+      <h4>Add More flowers To Your Email</h4>
+      <form id="form" action="https://www.freecodecamp.com/email-submit">
+        <input type="email" id="email" name="email" placeholder="Your email" required>
+        <input type="submit" id="submit" value="OK" class="submit">
+      </form>
+    </div>
+    <div class="contact-wrapper">
+      <h4>Stay In Touch With fungblue</h4>
+      <div class="wrapper">
+        <ul class="social-menu">
+          <li><a href="#"><i class="fa fa-pinterest" aria-hidden="true"></i></a></li>
+          <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+          <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+          <li><a href="#"><i class="fa fa-youtube-play" aria-hidden="true"></i></a></li>
+        </ul>
+        <a class="contact-footer contact-tel" href="#"><i class="fa fa-phone" aria-hidden="true"></i>001-283-4892</a>
+        <a class="contact-footer contact-email" href="#"><i class="fa fa-envelope-o" aria-hidden="true"></i>Send an email</a>
+      </div>
+    </div>
+    <div class="copy-wrapper">
+      <h6><i class="fa fa-copyright" aria-hidden="true"></i> Theme, Logo, Product Design by <a href="https://codepen.io/ann_">Sandy</a></h6>
+    </div>
+  </div>
+</section>
 </body>
 </html>
