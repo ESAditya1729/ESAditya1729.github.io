@@ -619,3 +619,14 @@ margin: 0;
  width: 18.5em;
 }
 }
+@keyframes floating {
+	0% {
+		transform: translatey(0px);
+	}
+	50% {
+		transform: translatey(-15px);
+	}
+	100% {
+		transform: translatey(0px);
+	}
+}
